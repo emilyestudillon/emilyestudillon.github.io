@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Attack on Titan | Fan Page</title>
 
-
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    
     * {
       margin: 0;
       padding: 0;
@@ -48,6 +46,53 @@
       margin: 1rem auto 0;
       font-size: 1.1rem;
       color: #dddddd;
+    }
+
+    .header-images {
+ 	margin-top: 2rem;
+  	display: flex;
+  	justify-content: center;
+  	align-items: flex-start;
+  	gap: 1.5rem;
+  	flex-wrap: wrap;
+	}
+
+
+
+    .image-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .image-card img {
+  	width: 250px;
+ 	height: auto;
+  	max-height: 340px;
+  	border-radius: 12px;
+  	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  	transition: transform 0.3s ease;
+	}
+
+
+    .image-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .image-card a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #e63946;
+      background: rgba(0,0,0,0.6);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .image-card a:hover {
+      background: #e63946;
+      color: #0f0f0f;
     }
 
     main {
@@ -120,6 +165,29 @@
       <p>
         Humanity fights for survival behind massive walls, facing Titans and uncovering truths that reshape the world.
       </p>
+
+      <div class="header-images">
+        <div class="image-card">
+          <img src="main.jpeg" alt="Attack on Titan Season 1">
+          <a href="https://en.wikipedia.org/wiki/Attack_on_Titan_season_1" target="_blank">
+            Click here to explore Season 1
+          </a>
+        </div>
+
+        <div class="image-card">
+          <img src="second.jpeg" alt="Attack on Titan Season 2">
+          <a href="https://en.wikipedia.org/wiki/Attack_on_Titan_season_2" target="_blank">
+            Click here to discover Season 2
+          </a>
+        </div>
+
+        <div class="image-card">
+          <img src="third.jpeg" alt="Attack on Titan Season 3">
+          <a href="https://en.wikipedia.org/wiki/Attack_on_Titan_season_3" target="_blank">
+            Click here to dive into Season 3
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
